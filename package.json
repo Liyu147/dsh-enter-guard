@@ -1,0 +1,51 @@
+{
+  "name": "dsh-enter-guard",
+  "version": "0.1.0",
+  "description": "Double-Enter send guard for DeepSeek Harness: the first Enter only arms the composer, the second one really sends; any other key cancels. Stops half-written drafts from being sent by an accidental Enter.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "composer",
+    "enter",
+    "send",
+    "confirm",
+    "ui"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "author": "Liyu147",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liyu147/dsh-enter-guard.git"
+  },
+  "homepage": "https://github.com/Liyu147/dsh-enter-guard#readme",
+  "bugs": {
+    "url": "https://github.com/Liyu147/dsh-enter-guard/issues"
+  },
+  "license": "MIT"
+}

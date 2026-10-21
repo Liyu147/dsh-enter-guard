@@ -1,0 +1,11 @@
+# dsh-enter-guard bundle patch.
+#
+# Installed through `dsh plugin --profile web add <this package>` (bundle layer),
+# or by adding the same row to the profile's own cordis.patch.yml.
+#
+# The host half is an empty shell on purpose: every behaviour lives in the
+# browser bundle (lib/client.js), which installs its own document-level key
+# listener. There is no session data, no storage and no network call involved.
+- insert:
+    - id: dsh-enter-guard
+      name: dsh-enter-guard

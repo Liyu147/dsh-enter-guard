@@ -1,0 +1,2 @@
+# 统一换行：仓库内一律 LF（Windows 检出也保持 LF，避免跨平台 diff 噪声）
+* text=auto eol=lf
